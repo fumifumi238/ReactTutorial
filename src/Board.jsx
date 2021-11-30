@@ -1,18 +1,6 @@
 import React from "react";
-// Square（三目並べの正方形のマス目）コンポーネントをimport
 import Square from "./Square";
 
-// class Board extends React.Component {
-//   renderSquare(i) {
-//     return (
-//       <Square
-//         value={this.props.squares[i]}
-//         onClick={() => this.props.onClick(i)}
-//       />
-//     );
-//   }
-
-// Game コンポーネントから { squares, onClick } = props を受け取っている
 const Board = ({ squares, onClick }) => {
   const renderSquare = i => {
     return (
@@ -25,7 +13,6 @@ const Board = ({ squares, onClick }) => {
     );
   };
 
-  // render() {
   return (
     <>
       <div className="board-row">
@@ -45,7 +32,6 @@ const Board = ({ squares, onClick }) => {
       </div>
     </>
   );
-  // }
 };
 
 export default Board;
